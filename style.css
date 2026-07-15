@@ -1,0 +1,102 @@
+:root {
+    --text-color: #e6edf3;
+    --text-muted: #9da7b3;
+
+    --link-color: #58a6ff;
+    --link-hover: #79c0ff;
+
+    --heading-color: #ffffff;
+
+    --panel-bg: rgba(10, 15, 25, 0.65);
+    --border-color: rgba(255, 255, 255, 0.15);
+
+    --header-height: 130px;
+    --footer-height: 50px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+
+    font-family: sans-serif;
+    color: var(--text-color);
+
+    background-image: url("images/wallpaper.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--heading-color);
+    margin: 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+header,
+footer {
+    background: var(--panel-bg);
+    color: var(--text-color);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border-color: var(--border-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: var(--header-height);
+
+    border-bottom: 1px solid var(--border-color);
+
+    z-index: 1000;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: var(--footer-height);
+
+    border-top: 1px solid var(--border-color);
+
+    z-index: 1000;
+    text-align: center;
+}
+
+main {
+    padding-top: var(--header-height);
+    padding-bottom: var(--footer-height);
+}
+
+::selection {
+    background: var(--link-color);
+    color: #000;
+}
