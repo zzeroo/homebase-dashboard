@@ -1,6 +1,6 @@
 # Homebase Dashboard
 
-Dashboard for Homebase
+Simple Dashboard for zzeroo's home lab 
 
 ## Development
 
