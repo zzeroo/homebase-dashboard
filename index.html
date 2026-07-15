@@ -1,77 +1,79 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Hail, zzeroo systems!</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-      <div class="page">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Hail, zzeroo systems!</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div class="page">
 
-    	  <header>
-    		  <h1>zzeroo systems</h1>
-    		  <h2><i>Rock solid,<i>&nbsp;<b>heart touching</b>&nbsp;since 1978</h2>
-    		  <div><i>... Home, sweet home!</i></div>
-    	  </header>
+         	  <header>
+            		  <h1>zzeroo systems</h1>
+            		  <h2><i>Rock solid,<i>&nbsp;<b>heart touching</b>&nbsp;since 1978</h2>
+            		  <div><i>... Home, sweet home!</i></div>
+         	  </header>
 
-    	  <main>
-           <h1>Homebase</h1>
-    		  <ul>
-    			  <li class="bold"><a href="http://homeserver.zzeroo.lan/dashboard" data-fqdn="homeserver" target="_blank" rel="noopener noreferrer">IoT - Homeserver - Dashboard v2</a></li>
-    			  <li><a href="http://homeserver.zzeroo.lan" data-fqdn="homeserver" target="_blank" rel="noopener noreferrer">IoT - Homeserver</a></li>
-    			  <li><a href="https://zabbix01.zzeroo.lan/zabbix" data-fqdn="zabbix01" target="_blank" rel="noopener noreferrer">Zabbix - Monitoring</a></li>
-    			  <li><a href="http://paperless.zzeroo.lan/documents/955/details" target="_blank" rel="noopener noreferrer">Paperless - Document Management</a></li>
-    			  <li><a href="https://192.168.10.6:9090/machines" target="_blank" rel="noopener noreferrer">Cockpit - Virtualization</a></li>
-    			  <li><a href="https://gateway01.zzeroo.lan:10443/" target="_blank" rel="noopener noreferrer">pfSense - Firewall</a></li>
-    			  <li><a href="https://192.168.10.8/" target="_blank" rel="noopener noreferrer">TrueNAS - NAS</a></li>
-    			  <li><a href="http://xwiki.zzeroo.lan:8080" target="_blank" rel="noopener noreferrer">XWiki - Wiki</a></li>
-    			  <li><a href="http://docker01.zzeroo.lan:3000/login" target="_blank" rel="noopener noreferrer">Grafana - Monitoring</a></li>
-    		  </ul>
+         	  <main>
+                <h1>Homebase</h1>
+            		  <ul>
+               			  <li><a href="https://192.168.10.6:9090/machines" target="_blank" rel="noopener noreferrer">IP: 192.168.10.6 - Cockpit - Virtualization</a></li>
+               			  <li><a href="https://192.168.10.8/" target="_blank" rel="noopener noreferrer">IP: 192.168.10.8 - TrueNAS - NAS</a></li>
+               			  <li class="bold"><a href="http://homeserver.zzeroo.lan/dashboard" data-fqdn="homeserver" target="_blank" rel="noopener noreferrer">IoT - Homeserver - Dashboard v2</a></li>
+               			  <li><a href="http://homeserver.zzeroo.lan" data-fqdn="homeserver" target="_blank" rel="noopener noreferrer">IoT - Homeserver</a></li>
+               			  <li><a href="https://zabbix01.zzeroo.lan/zabbix" data-fqdn="zabbix01" target="_blank" rel="noopener noreferrer">Zabbix - Monitoring</a></li>
+               			  <li><a href="http://paperless.zzeroo.lan/documents/955/details" data-fqdn="paperless" target="_blank" rel="noopener noreferrer">Paperless - Document Management</a></li>
+               			  <li><a href="https://gateway01.zzeroo.lan:10443/" data-fqdn="gateway01" target="_blank" rel="noopener noreferrer">pfSense - Firewall</a></li>
+               			  <li><a href="http://xwiki.zzeroo.lan:8080" data-fqdn="xwiki" target="_blank" rel="noopener noreferrer">XWiki - Wiki</a></li>
+               			  <li><a href="http://docker01.zzeroo.lan:3000/login" data-fqdn="docker01" target="_blank" rel="noopener noreferrer">Grafana - Monitoring</a></li>
+            		  </ul>
 
-            <h1>Misc</h1>
-            <ul>
-                <li><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPT - AI</a></li>
-            </ul>
+                <h1>Misc</h1>
+                <ul>
+                    <li><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPT - AI</a></li>
+                </ul>
 
-            <h1>AI</h1>
-            <ul>
-                <li><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPT - AI</a></li>
-            </ul>
+                <h1>AI</h1>
+                <ul>
+                    <li><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPT - AI</a></li>
+                </ul>
 
-    	  </main>
+         	  </main>
 
-    	  <footer class="gray">
-           <div>v0.1.0</div>
-    		  :wq
-    	  </footer>
-      </div>
+         	  <footer class="gray">
+                <div>v0.1.0</div>
+            		  :wq
+         	  </footer>
+        </div>
 
-      <script>
-      document.addEventListener("DOMContentLoaded", function () {
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
 
-          const host = window.location.hostname;
+            const host = window.location.hostname;
 
-          let domain;
+            let domain;
 
-          if (host.endsWith(".zzeroo.ray")) {
-              domain = "zzeroo.ray";
-          } else if (host.endsWith(".homebase.ray")) {
-              domain = "homebase.ray";
-          } else {
-              domain = "zzeroo.lan";
-          }
+            if (host.endsWith(".zzeroo.ray")) {
+                domain = "zzeroo.ray";
+            } else if (host.endsWith(".homebase.ray")) {
+                domain = "homebase.ray";
+            } else if (host.endsWith(".homebase.zzeroo.com")) {
+                domain = "homebase.zzeroo.com";
+            } else {
+                domain = "zzeroo.lan";
+            }
 
-          document.querySelectorAll("a[data-fqdn]").forEach(function(link) {
-              const fqdn = link.dataset.fqdn;
+            document.querySelectorAll("a[data-fqdn]").forEach(function(link) {
+                const fqdn = link.dataset.fqdn;
 
-              link.href = link.href.replace(
-                  fqdn + ".zzeroo.lan",
-                  fqdn + "." + domain
-              );
-          });
+                link.href = link.href.replace(
+                    fqdn + ".zzeroo.lan",
+                    fqdn + "." + domain
+                );
+            });
 
-      });
-      </script>
-  </body>
+        });
+        </script>
+    </body>
 </html>
