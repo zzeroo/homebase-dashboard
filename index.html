@@ -18,25 +18,25 @@
     	  <main>
            <h1>Homebase</h1>
     		  <ul>
-    			  <li class="bold"><a href="http://homeserver.zzeroo.lan/dashboard" target="blank">IoT - Homeserver - Dashboard v2</a></li>
-    			  <li><a href="http://homeserver.zzeroo.lan" target="blank">IoT - Homeserver</a></li>
-    			  <li><a href="https://zabbix01.zzeroo.lan/zabbix" target="blank">Zabbix - Monitoring</a></li>
-    			  <li><a href="http://paperless.zzeroo.lan/documents/955/details" target="blank">Paperless - Document Management</a></li>
-    			  <li><a href="https://192.168.10.6:9090/machines" target="blank">Cockpit - Virtualization</a></li>
-    			  <li><a href="https://gateway01.zzeroo.lan:10443/" target="blank">pfSense - Firewall</a></li>
-    			  <li><a href="https://192.168.10.8/" target="blank">TrueNAS - NAS</a></li>
-    			  <li><a href="http://xwiki.zzeroo.lan:8080" target="blank">XWiki - Wiki</a></li>
-    			  <li><a href="http://docker01.zzeroo.lan:3000/login" target="blank">Grafana - Monitoring</a></li>
+    			  <li class="bold"><a href="http://homeserver.zzeroo.lan/dashboard" data-fqdn="homeserver" target="_blank" rel="noopener noreferrer">IoT - Homeserver - Dashboard v2</a></li>
+    			  <li><a href="http://homeserver.zzeroo.lan" data-fqdn="homeserver" target="_blank" rel="noopener noreferrer">IoT - Homeserver</a></li>
+    			  <li><a href="https://zabbix01.zzeroo.lan/zabbix" data-fqdn="zabbix01" target="_blank" rel="noopener noreferrer">Zabbix - Monitoring</a></li>
+    			  <li><a href="http://paperless.zzeroo.lan/documents/955/details" target="_blank" rel="noopener noreferrer">Paperless - Document Management</a></li>
+    			  <li><a href="https://192.168.10.6:9090/machines" target="_blank" rel="noopener noreferrer">Cockpit - Virtualization</a></li>
+    			  <li><a href="https://gateway01.zzeroo.lan:10443/" target="_blank" rel="noopener noreferrer">pfSense - Firewall</a></li>
+    			  <li><a href="https://192.168.10.8/" target="_blank" rel="noopener noreferrer">TrueNAS - NAS</a></li>
+    			  <li><a href="http://xwiki.zzeroo.lan:8080" target="_blank" rel="noopener noreferrer">XWiki - Wiki</a></li>
+    			  <li><a href="http://docker01.zzeroo.lan:3000/login" target="_blank" rel="noopener noreferrer">Grafana - Monitoring</a></li>
     		  </ul>
 
             <h1>Misc</h1>
             <ul>
-                <li><a href="https://chatgpt.com/" target="blank">ChatGPT - AI</a></li>
+                <li><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPT - AI</a></li>
             </ul>
 
             <h1>AI</h1>
             <ul>
-                <li><a href="https://chatgpt.com/" target="blank">ChatGPT - AI</a></li>
+                <li><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPT - AI</a></li>
             </ul>
 
     	  </main>
@@ -46,5 +46,32 @@
     		  :wq
     	  </footer>
       </div>
+
+      <script>
+      document.addEventListener("DOMContentLoaded", function () {
+
+          const host = window.location.hostname;
+
+          let domain;
+
+          if (host.endsWith(".zzeroo.ray")) {
+              domain = "zzeroo.ray";
+          } else if (host.endsWith(".homebase.ray")) {
+              domain = "homebase.ray";
+          } else {
+              domain = "zzeroo.lan";
+          }
+
+          document.querySelectorAll("a[data-fqdn]").forEach(function(link) {
+              const fqdn = link.dataset.fqdn;
+
+              link.href = link.href.replace(
+                  fqdn + ".zzeroo.lan",
+                  fqdn + "." + domain
+              );
+          });
+
+      });
+      </script>
   </body>
 </html>
