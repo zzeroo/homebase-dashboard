@@ -4,12 +4,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Dashboard</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <link rel="manifest" href="/site.webmanifest?v=20260719" />
-        <link rel="shortcut icon" href="/favicon.ico?v=20260719" />
-        <link rel="icon" type="image/svg+xml" href="/images/favicon.svg?v=20260719" />
-        <link rel="icon" type="image/png" href="/images/favicon-96x96.png?v=20260719" sizes="96x96" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=20260719" />
+        <link rel="stylesheet" type="text/css" href="style.css?v=20260814" />
+        <link rel="manifest" href="/site.webmanifest?v=20260814" />
+        <link rel="shortcut icon" href="/favicon.ico?v=20260814" />
+        <link rel="icon" type="image/svg+xml" href="/images/favicon.svg?v=20260814" />
+        <link rel="icon" type="image/png" href="/images/favicon-96x96.png?v=20260814" sizes="96x96" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=20260814" />
         <meta name="apple-mobile-web-app-title" content="Homebase" />
     </head>
     <body>
@@ -29,78 +29,127 @@
 
             <main>
                 <section>
-                    <div>&nbsp;</div>
-                    <h2>Homebase</h2>
+                    <h2>Infrastructure</h2>
                     <div class="grid">
                         <a class="card" href="https://gateway.zzeroo.lan" data-fqdn="gateway01" target="_blank" rel="noopener noreferrer">
-                            <div class="title">OPNSense</div>
-                            <div class="subtitle">Firewall</div>
-                            <div class="status">🟢 Online</div>
+                            <img class="card-icon" src="/images/icons/opnsense.svg" alt="" />
+                            <div class="card-content">
+                                <div class="title">OPNSense</div>
+                                <div class="subtitle">Firewall</div>
+                                <div class="status">🟢 Online</div>
+                            </div>
                         </a>
 
                         <a class="card" href="https://fritzbox.zzeroo.lan" data-fqdn="fritzbox" target="_blank" rel="noopener noreferrer">
-                            <div class="title">Fritzbox</div>
-                            <div class="subtitle">WLAN Access Point</div>
-                            <div class="status">🟢 Online</div>
+                            <img class="card-icon" src="/images/icons/fritzbox.svg" alt="" />
+                            <div class="card-content">
+                                <div class="title">Fritzbox</div>
+                                <div class="subtitle">WLAN Access Point</div>
+                                <div class="status">🟢 Online</div>
+                            </div>
                         </a>
 
                         <a class="card" href="https://s-p71-01.zzeroo.lan:9090" data-fqdn="p-71-01" target="_blank" rel="noopener noreferrer">
-                            <div class="title">Cockpit</div>
-                            <div class="subtitle">Virtualization Host</div>
-                            <div class="status">🟢 Online</div>
+                            <img class="card-icon" src="/images/icons/cockpit.svg" alt="" />
+                            <div class="card-content">
+                                <div class="title">Cockpit</div>
+                                <div class="subtitle">Virtualization Host</div>
+                                <div class="status">🟢 Online</div>
+                            </div>
                         </a>
 
                         <a class="card" href="https://nas.zzeroo.lan" data-fqdn="nas" target="_blank" rel="noopener noreferrer">
-                            <div class="title">TrueNAS</div>
-                            <div class="subtitle">Storage</div>
-                            <div class="status">🟢 Online</div>
+                            <img class="card-icon" src="/images/icons/truenas.svg" alt="" />
+                            <div class="card-content">
+                                <div class="title">TrueNAS</div>
+                                <div class="subtitle">Storage</div>
+                                <div class="status">🟢 Online</div>
+                            </div>
                         </a>
+                    </div>
+                </section>
 
+                <section>
+                    <h2>Monitoring</h2>
+                    <div class="grid">
                         <a class="card" href="https://zabbix01.zzeroo.lan/zabbix" data-fqdn="zabbix01" target="_blank" rel="noopener noreferrer">
-                            <div class="title">Zabbix - Monitoring</div>
-                            <div class="subtitle">Monitoring</div>
-                            <div class="status">🟢 Online</div>
+                            <img class="card-icon" src="/images/icons/zabbix.svg" alt="" />
+                            <div class="card-content">
+                                <div class="title">Zabbix - Monitoring</div>
+                                <div class="subtitle">Monitoring</div>
+                                <div class="status">🟢 Online</div>
+                            </div>
                         </a>
 
                         <a class="card" href="http://docker01.zzeroo.lan:3000/login" data-fqdn="docker01" target="_blank" rel="noopener noreferrer">
-                            <div class="title">Grafana - Monitoring</div>
-                            <div class="subtitle">Monitoring</div>
-                            <div class="status">🟢 Online</div>
+                            <img class="card-icon" src="/images/icons/grafana.svg" alt="" />
+                            <div class="card-content">
+                                <div class="title">Grafana - Monitoring</div>
+                                <div class="subtitle">Monitoring</div>
+                                <div class="status">🟢 Online</div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Home Automation</h2>
+                    <div class="grid">
+                        <a class="card" href="http://homeserver.zzeroo.lan" data-fqdn="homeserver" target="_blank" rel="noopener noreferrer">
+                            <img class="card-icon" src="/images/icons/nodered.svg" alt="" />
+                            <div class="card-content">
+                                <div class="title">IoT - Homeserver</div>
+                                <div class="subtitle">NodeRED</div>
+                                <div class="status">🟢 Online</div>
+                            </div>
                         </a>
 
-                        <a class="card" href="http://homeserver.zzeroo.lan" data-fqdn="homeserver" target="_blank" rel="noopener noreferrer">
-                            <div class="title">IoT - Homeserver</div>
-                            <div class="subtitle">NodeRED</div>
-                            <div class="status">🟢 Online</div>
+                        <a class="card" href="http://homeserver.zzeroo.lan/dashboard" data-fqdn="homeserver" target="_blank" rel="noopener noreferrer">
+                            <img class="card-icon" src="/images/icons/nodered.svg" alt="" />
+                            <div class="card-content">
+                                <div class="title">Homeserver - Dashboard</div>
+                            </div>
                         </a>
+
+                        <a class="card" href="http://homeserver.zzeroo.lan/dashboard/og" data-fqdn="homeserver" target="_blank" rel="noopener noreferrer">
+                            <img class="card-icon" src="/images/icons/nodered.svg" alt="" />
+                            <div class="card-content">
+                                <div class="title">Homeserver - Dashboard (OG)</div>
+                            </div>
+                        </a>
+
+                        <a class="card" href="http://homeserver.zzeroo.lan/dashboard/plugs" data-fqdn="homeserver" target="_blank" rel="noopener noreferrer">
+                            <img class="card-icon" src="/images/icons/nodered.svg" alt="" />
+                            <div class="card-content">
+                                <div class="title">Homeserver - Dashboard (Funksteckdosen)</div>
+                            </div>
+                        </a>
+
                     </div>
                 </section>
 
                 <section>
                     <h2>Applications</h2>
                     <div class="grid">
-                        <a class="card" href="http://homeserver.zzeroo.lan/dashboard" data-fqdn="homeserver" target="_blank" rel="noopener noreferrer">
-                            <div class="title">Homeserver - Dashboard</div>
-                        </a>
-
-                        <a class="card" href="http://homeserver.zzeroo.lan/dashboard/og" data-fqdn="homeserver" target="_blank" rel="noopener noreferrer">
-                            <div class="title">Homeserver - Dashboard (OG)</div>
-                        </a>
-
-                        <a class="card" href="http://homeserver.zzeroo.lan/dashboard/plugs" data-fqdn="homeserver" target="_blank" rel="noopener noreferrer">
-                            <div class="title">Homeserver - Dashboard (Funksteckdosen)</div>
-                        </a>
-
                         <a class="card" href="http://paperless.zzeroo.lan" data-fqdn="paperless" target="_blank" rel="noopener noreferrer">
-                            <div class="title">Paperless - Document Management</div>
+                            <img class="card-icon" src="/images/icons/paperless.svg" alt="" />
+                            <div class="card-content">
+                                <div class="title">Paperless - Document Management</div>
+                            </div>
                         </a>
 
                         <a class="card" href="http://nextcloud.zzeroo.lan:30027" data-fqdn="nextcloud" target="_blank" rel="noopener noreferrer">
-                            <div class="title">Nextcloud</div>
+                            <img class="card-icon" src="/images/icons/nextcloud.svg" alt="" />
+                            <div class="card-content">
+                                <div class="title">Nextcloud</div>
+                            </div>
                         </a>
 
                         <a class="card" href="http://xwiki.zzeroo.lan:8080" data-fqdn="xwiki" target="_blank" rel="noopener noreferrer">
-                            <div class="title">XWiki - Wiki</div>
+                            <img class="card-icon" src="/images/icons/xwiki.svg" alt="" />
+                            <div class="card-content">
+                                <div class="title">XWiki - Wiki</div>
+                            </div>
                         </a>
                     </div>
                 </section>

@@ -20,3 +20,11 @@ To deploy the dashboard, follow these steps:
 
 The repository on weh01 has a post-receive hook that automatically deploys the dashboard. 
 The dashboard will be available at `https://web01.zzeroo.ray` after deployment.
+
+
+# Tribute
+
+## Icons
+
+- https://dashboardicons.com/
+- https://github.com/loganmarchione/homelab-svg-assets
