@@ -1,0 +1,2 @@
+AddType application/x-x509-ca-cert .crt
+AddType application/x-x509-ca-cert .pem
