@@ -15,11 +15,11 @@ To run the dashboard locally, follow these steps:
 
 To deploy the dashboard, follow these steps:
 
-1. `git remote add production git@web01.zzeroo.ray:/srv/git/homebase-dashboard.git`
+1. `git remote add production git@web01.zzeroo.lan:/srv/git/homebase-dashboard.git`
 2. `git push production main`
 
 The repository on weh01 has a post-receive hook that automatically deploys the dashboard. 
-The dashboard will be available at `https://web01.zzeroo.ray` after deployment.
+The dashboard will be available at `https://web01.zzeroo.lan` after deployment.
 
 
 # Tribute
