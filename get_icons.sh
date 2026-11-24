@@ -11,6 +11,7 @@ declare -A icons=(
   ["paperless"]="https://raw.githubusercontent.com/loganmarchione/homelab-svg-assets/refs/heads/main/assets/paperlessng.svg"
   ["nextcloud"]="https://raw.githubusercontent.com/loganmarchione/homelab-svg-assets/refs/heads/main/assets/nextcloud.svg"
   ["xwiki"]="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/xwiki.svg"
+  ["cloudflare"]="https://upload.wikimedia.org/wikipedia/de/a/a2/Cloudflare_logo.svg?utm_source=de.wikipedia.org&utm_campaign=index&utm_content=original"
 )
 
 for name in "${!icons[@]}"; do

@@ -192,3 +192,29 @@ main {
     margin-top: 10px;
     font-size: 0.8rem;
 }
+
+
+.box {
+  display: block;
+  opacity: 1;
+  /* allow-discrete delays display: none until the opacity fade finishes */
+  transition: opacity 0.3s ease, display 0.3s allow-discrete;
+}
+
+.box.is-visible {
+  display: none;
+  opacity: 0;
+}
+
+/* Defines the starting state right as display changes from none to block */
+@starting-style {
+  .box.is-visible {
+    opacity: 1;
+  }
+}
+
+#toggleBtn {
+    background: none;
+    border: none;
+    color: white;
+}

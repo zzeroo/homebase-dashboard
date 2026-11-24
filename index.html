@@ -27,7 +27,7 @@
                 <div><i>... Home, sweet home!</i></div>
             </header>
 
-            <main>
+            <main id="box" class="box">
                 <section>
                     <h2>Infrastructure</h2>
                     <div class="grid">
@@ -186,6 +186,11 @@
                             <div class="title">ChatGPT - AI</div>
                         </a>
 
+                        <a class="card" href="https://dash.cloudflare.com/" target="_blank" rel="noopener noreferrer">
+                            <img class="card-icon" src="/images/icons/cloudflare.svg" alt="" />
+                            <div class="title">Cloudflare</div>
+                        </a>
+
                         <a class="card" href="https://ui.com/" target="_blank" rel="noopener noreferrer">
                             <div class="title">UI.com - Unifi</div>
                         </a>
@@ -233,8 +238,8 @@
 
             <footer class="gray">
                 <div><a href="https://github.com/zzeroo/homebase-dashboard">Github</a></div>
-                <div>v0.3.0</div>
-            		  :wq
+                <div>v0.4.0</div>
+            		  <button id="toggleBtn">:wq</button>
             </footer>
 
         </div>
@@ -265,6 +270,13 @@
                 );
             });
 
+        });
+
+        const btn = document.getElementById('toggleBtn');
+        const box = document.getElementById('box');
+
+        btn.addEventListener('click', () => {
+          box.classList.toggle('is-visible');
         });
         </script>
     </body>
