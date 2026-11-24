@@ -12,6 +12,7 @@ declare -A icons=(
   ["nextcloud"]="https://raw.githubusercontent.com/loganmarchione/homelab-svg-assets/refs/heads/main/assets/nextcloud.svg"
   ["xwiki"]="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/xwiki.svg"
   ["cloudflare"]="https://upload.wikimedia.org/wikipedia/de/a/a2/Cloudflare_logo.svg?utm_source=de.wikipedia.org&utm_campaign=index&utm_content=original"
+  ["patchmon"]="https://raw.githubusercontent.com/PatchMon/PatchMon/refs/heads/main/frontend/public/assets/logo_square_default.svg"
 )
 
 for name in "${!icons[@]}"; do

@@ -21,6 +21,11 @@ To deploy the dashboard, follow these steps:
 The repository on weh01 has a post-receive hook that automatically deploys the dashboard. 
 The dashboard will be available at `https://web01.zzeroo.lan` after deployment.
 
+### Get Icons
+
+´´´sh
+bash -c ./get_icons.sh
+´´´ 
 
 # Tribute
 
